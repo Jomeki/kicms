@@ -15,7 +15,7 @@ class Event extends Model
 
     public function user()
     {
-        return $this->hasMany(AppUser::class);
+        return $this->belongsTo(AppUser::class);
     }
 
     public function contribution()

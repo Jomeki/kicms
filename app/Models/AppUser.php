@@ -30,6 +30,11 @@ class AppUser extends Model implements FilamentUser
         return $this->hasMany(Contribution::class);
     }
 
+    public function event()
+    {
+        return $this->hasMany(Event::class);
+    }
+
     public function getFullNameAttribute()
     {
         return "{$this->fname} {$this->sname} {$this->lname}";

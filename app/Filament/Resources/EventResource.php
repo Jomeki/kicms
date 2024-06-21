@@ -54,9 +54,10 @@ class EventResource extends Resource
                         ->searchable()
                         ->label('Event Owner')
                         ->required(),
-//                    Forms\Components\Select::make('created_by_id')
-//                        ->options([Auth::user()->id])
-//                        ->required(),
+                    Forms\Components\Select::make('created_by_id')
+                        ->options([Auth::user()->id])
+                        ->hidden()
+                        ->required(),
                 ]),
             ]);
     }
@@ -72,12 +73,8 @@ class EventResource extends Resource
                     ->sortable(),
                 Tables\Columns\TextColumn::make('location')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('user.full_name')
+                Tables\Columns\TextColumn::make('user.full')
                     ->label('Event Owner')
-                    ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('created_by_id')
-                    ->label('Event Created by')
                     ->numeric()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')

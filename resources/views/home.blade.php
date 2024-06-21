@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sw">
 
 <head>
   <meta charset="utf-8">
@@ -34,7 +34,7 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="{{url('/')}}" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">KICMS</h1>
@@ -130,6 +130,12 @@
     </section>
   </main>
 
+{{--  <div class="container copyright text-center my-2">--}}
+{{--      <p>© <span>Copyright</span> <strong class="px-1 sitename">OnePage</strong> <span>All Rights Reserved</span></p>--}}
+{{--      <div class="credits">--}}
+{{--          Designed and Developed by <a href="https://www.linkedin.com/in/joackim-kisoka-474692254/">Joachim Kisoka</a>--}}
+{{--      </div>--}}
+{{--  </div>--}}
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
